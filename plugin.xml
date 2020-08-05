@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cn.bg2it.pda.ubxScan" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>ubxScanPlugin</name>
+    <js-module name="ubxScanPlugin" src="www/ubxScanPlugin.js">
+        <clobbers target="cordova.plugins.ubxScanPlugin"/>
+    </js-module>
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ubxScanPlugin">
+                <param name="android-package" value="cn.bg2it.pda.ubxScan.ubxScanPlugin"/>
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="AndroidManifest.xml"></config-file>
+        <lib-file src="lib/android/platform_sdk_v3.0.0416.jar"/>
+        <source-file src="src/android/UBXScan.java" target-dir="src/cn/bg2it/pda/ubxScan/UBXScan" />
+        <source-file src="src/android/ubxScanPlugin.java" target-dir="src/cn/bg2it/pda/ubxScan/ubxScanPlugin"/>
+    </platform>
+</plugin>
