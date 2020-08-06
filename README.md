@@ -1,12 +1,12 @@
-# cordova优博讯PDA扫描插件
+# cordova PDA扫描插件
+
+插件根据优博讯提供的API开发，且仅测试过优博讯手持终端
 
 ### 一、主要方法说明
 
 **onBarcodeScanned()**  
 
 设置扫描成功后的回调方法（建议初始页面时就设置回调）
-
-使用方式：
 
 ```js
 cordova.plugins.ubxScanPlugin.onBarcodeScanned((code) => {
@@ -16,9 +16,7 @@ cordova.plugins.ubxScanPlugin.onBarcodeScanned((code) => {
 
 **doScan()**
 
-开始扫描
-
-使用方式：
+开始扫描（调用扫描探头扫描）
 
 ```js
 cordova.plugins.ubxScanPlugin.doScan()
@@ -39,7 +37,10 @@ cordova.plugins.ubxScanPlugin.isUBX((res) => {
 });
 ```
 
-#### 二、android开发推荐
+#### 二、相关推荐
 
-[android优博讯PDA扫描开发](http://blog.h.binge430.cn/article/android_ubx_scan)
+[android原生 PDA扫描开发](http://blog.h.binge430.cn/article/android_ubx_scan)
 
+[react native PDA扫描插件](https://github.com/Txiaomo/react-native-scancode)
+
+[uni-app PDA扫描开发](https://ask.dcloud.net.cn/article/37294)
