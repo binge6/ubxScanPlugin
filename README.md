@@ -39,7 +39,7 @@ cordova.plugins.ubxScanPlugin.isUBX((res) => {
 
 #### 二、相关推荐
 
-[android原生 PDA扫描开发](http://blog.h.binge430.cn/article/android_ubx_scan)
+[android原生 PDA扫描开发](https://blog.binge430.cn/2020/08/19/android%E4%BC%98%E5%8D%9A%E8%AE%AFpda%E6%89%AB%E6%8F%8F%E5%BC%80%E5%8F%91.html)
 
 [react native PDA扫描插件](https://github.com/Txiaomo/react-native-scancode)
 
